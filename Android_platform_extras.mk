@@ -10,10 +10,6 @@ LOCAL_SHARED_LIBRARIES :=	libutils \
 							libvorbisidec \
 							libsonivox \
 							liblog \
-							libicuuc
-
-ifneq ($(BOARD_USES_ECLAIR_LIBCAMERA),true)
-    LOCAL_SHARED_LIBRARIES += \
-	libsurfaceflinger_client \ 
-	libcamera_client
-endif
+							libicuuc \
+							libcamera_client \
+							libsurfaceflinger_client
